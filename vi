@@ -485,8 +485,8 @@ class VideoLooper:
         
         # Filtrado de senal - 20 muestras en 1 segundo
         valid_samples = 0
-        total_samples = 20
-        threshold = 15  # 75% de muestras positivas
+        total_samples = 60
+        threshold = 51  # 85% de muestras positivas
         
         for _ in range(total_samples):
             if GPIO.input(pin):
